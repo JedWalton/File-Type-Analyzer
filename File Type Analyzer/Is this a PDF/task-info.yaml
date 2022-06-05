@@ -105,9 +105,18 @@ files:
         }
     }
   learner_created: false
-feedback_link: https://hyperskill.org/projects/64/stages/343/implement#comment
-status: Solved
+feedback_link: https://hyperskill.org/learn/step/5485#comment
+status: Failed
 feedback:
-  message: Congratulations!
-  time: Sat, 04 Jun 2022 18:18:05 UTC
-record: -1
+  message: |-
+    Wrong answer in test #1
+
+    The file had following content: PFDF%PDF-PDF and was analyzed for pattern %PDF-
+    Expected result: PDF document
+    Actual result: doc.pdf
+    %PDF-
+    PDF document
+
+    Arguments: doc.pdf %PDF- &quot;PDF document&quot;
+  time: Sun, 05 Jun 2022 14:59:21 UTC
+record: 1
