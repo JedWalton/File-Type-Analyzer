@@ -26,6 +26,10 @@
             <option value="$PROJECT_DIR$/File Type Analyzer/task/build/test-results/bin" />
             <option value="$PROJECT_DIR$/File Type Analyzer/task/build/tmp" />
             <option value="$PROJECT_DIR$/File Type Analyzer/task/build/tmp/bin" />
+            <option value="$PROJECT_DIR$/Topics/Callable and Future/How many tasks are finished" />
+            <option value="$PROJECT_DIR$/Topics/Callable and Future/Theory" />
+            <option value="$PROJECT_DIR$/Topics/Interruptions/Interrupting a thread" />
+            <option value="$PROJECT_DIR$/Topics/Interruptions/Theory" />
             <option value="$PROJECT_DIR$/util" />
           </set>
         </option>
