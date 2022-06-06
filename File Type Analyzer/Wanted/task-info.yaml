@@ -183,18 +183,15 @@ files:
 
     }
   learner_created: false
+- name: src/analyzer/SearchAlgorithms.java
+  visible: true
+  learner_created: true
+- name: src/analyzer/KNP_algorithmThread.java
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/5487#comment
-status: Failed
+status: Solved
 feedback:
-  message: "Wrong answer in test #4\n\nThere were not enough Threads started, you\
-    \ should process each file in a different Thread. \nYou started 2 threads, but\
-    \ you need to start 10 threads. \nThe executor.invokeAll() method might help.\
-    \ Also, don&#39;t forget to call .shutdown().\n\nPlease find below the output\
-    \ of your program during this failed test.\n\n---\n\nArguments: test_files %txt-\
-    \ &quot;TXT document&quot;\n\ntest_files/doc8.pdf: Unknown file type\ntest_files/doc9.txt:\
-    \ Unknown file type\ntest_files/doc7.pdf: TXT document\ntest_files/doc1.pdf: TXT\
-    \ document\ntest_files/doc6.pdf: TXT document\ntest_files/doc0.pdf: TXT document\n\
-    test_files/doc5.pdf: TXT document\ntest_files/doc3.pdf: TXT document\ntest_files/doc2.pdf:\
-    \ TXT document\ntest_files/doc4.pdf: TXT document"
-  time: Mon, 06 Jun 2022 15:14:13 UTC
+  message: Congratulations!
+  time: Mon, 06 Jun 2022 17:01:24 UTC
 record: -1
