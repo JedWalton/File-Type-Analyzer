@@ -1,27 +1,35 @@
 package analyzer;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.Duration;
 import java.time.Instant;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String flag = args[0];
-        String file = args[1];
-        String pattern = args[2];
-        String res = args[3];
+//        String flag = args[0];
+        String flag = "--naive";
+        String folderWithFiles = args[0];
+//        String file = args[1];
+        String pattern = args[1];
+        String fileType = args[2];
 
-        Path path = Paths.get(file);
-        byte[] data = Files.readAllBytes(path);
+        File folder = new File(folderWithFiles);
+        if (folder.isDirectory()) {
 
-        String text = new String(data);
+            File[] files = folder.listFiles();
+            for (File file : files) {
+                byte[] data = Files.readAllBytes(file.toPath());
+                String text = new String(data);
+                KNP(text, pattern, fileType, file);
+            }
+        }
+//        String text = new String(data);
         if (flag.equals("--naive")) {
-            naive(text, pattern, res);
+//            naive(text, pattern, fileType);
         } else if (flag.equals("--KMP")) {
-            KNP(text, pattern, res);
+//            KNP(text, pattern, fileType);
         }
     }
 
@@ -39,21 +47,20 @@ public class Main {
         System.out.println("It took " + d.toSeconds() + " seconds");
     }
 
-    static void KNP(String text, String pattern, String res) {
+    static void KNP(String text, String pattern, String res, File file) {
         Instant startTimeKMP = Instant.now();
         Instant endTimeKMP = Instant.now();
 
         if (matchesKNP(pattern, text)) {
-            System.out.println(res);
+            System.out.println(file + ": " + res);
         } else {
-            System.out.println("Unknown file type");
+            System.out.println(file + ": Unknown file type");
         }
 
-        System.out.println(res);
-        Duration d = Duration.between(startTimeKMP, endTimeKMP);
-        System.out.println("It took " + d.toSeconds() + " seconds");
+//        System.out.println(res);
+//        Duration d = Duration.between(startTimeKMP, endTimeKMP);
+//        System.out.println("It took " + d.toSeconds() + " seconds");
     }
-
 
 
     static boolean matchesKNP(String pat, String txt) {
@@ -110,7 +117,7 @@ public class Main {
                 i++;
             } else // (pat[i] != pat[len])
             {
-                // This is tricky. Consider the example.
+                // this is tricky. Consider the example.
                 // AAACAAAA and i = 7. The idea is similar
                 // to search step.
                 if (len != 0) {
