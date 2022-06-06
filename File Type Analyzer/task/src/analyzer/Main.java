@@ -11,18 +11,14 @@ import java.util.concurrent.*;
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
 //        String flag = args[0];
-        String flag = "--naive";
+//        String flag = "--naive";
         String folderWithFiles = args[0];
 //        String file = args[1];
         String pattern = args[1];
         String fileType = args[2];
-
         File folder = new File(folderWithFiles);
 
 
-        final ArrayList<KNP_algorithmThread> workers = new ArrayList<>();
-        // FIFO Ordering
-        final LinkedBlockingQueue<Runnable> queue;
         ExecutorService es = Executors.newCachedThreadPool();
 
 
@@ -39,10 +35,10 @@ public class Main {
         }
 
 //        String text = new String(data);
-        if (flag.equals("--naive")) {
+//        if (flag.equals("--naive")) {
 //            naive(text, pattern, fileType);
-        } else if (flag.equals("--KMP")) {
+//        } else if (flag.equals("--KMP")) {
 //            KNP(text, pattern, fileType);
-        }
+//        }
     }
 }

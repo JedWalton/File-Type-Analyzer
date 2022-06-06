@@ -1,23 +1,2 @@
 [1;31m
 Start test 1[0m
-"test_files/text.txt: PDF document
-!test_files/doc.pdf: PDF document
-[1;31m
-Start test 2[0m
-%test_files/file.pdf: PEM certificate
-%test_files/file.pem: PEM certificate
-[1;31m
-Start test 3[0m
-.test_files/the_only_file.pem: PEM certificate
-[1;31m
-Start test 4[0m
-'test_files/doc8.pdf: Unknown file type
-"test_files/doc6.pdf: TXT document
-"test_files/doc1.pdf: TXT document
-"test_files/doc7.pdf: TXT document
-'test_files/doc9.txt: Unknown file type
-"test_files/doc4.pdf: TXT document
-"test_files/doc2.pdf: TXT document
-"test_files/doc3.pdf: TXT document
-"test_files/doc5.pdf: TXT document
-"test_files/doc0.pdf: TXT document
