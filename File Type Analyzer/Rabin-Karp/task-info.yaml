@@ -294,6 +294,9 @@ files:
         }
     }
   learner_created: false
+- name: src/analyzer/patterns.db
+  visible: true
+  learner_created: true
 feedback_link: https://hyperskill.org/learn/step/5489#comment
 status: Unchecked
 record: -1
