@@ -40,8 +40,8 @@
 cert.pem: PEM certificate
 [1;31m
 Start test 11[0m
-1.jpg: ISO Media JPEG 2000
 2.jpg: Unknown file type
+1.jpg: ISO Media JPEG 2000
 [1;31m
 Start test 12[0m
 &tape.jpg: ISO Media MP4 Base Media v2

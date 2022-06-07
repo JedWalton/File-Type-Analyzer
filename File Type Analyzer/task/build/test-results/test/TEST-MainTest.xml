@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-07T02:26:28" hostname="PC" time="0.096">
+<testsuite name="MainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-06-07T15:19:01" hostname="PC" time="0.105">
   <properties/>
-  <testcase name="start" classname="MainTest" time="0.096"/>
+  <testcase name="start" classname="MainTest" time="0.105"/>
   <system-out><![CDATA[?[1;31m
 Start test 1?[0m
 doc.pdf: PDF document
@@ -44,8 +44,8 @@ cert_core.pem: Unknown file type
 cert.pem: PEM certificate
 ?[1;31m
 Start test 11?[0m
-1.jpg: ISO Media JPEG 2000
 2.jpg: Unknown file type
+1.jpg: ISO Media JPEG 2000
 ?[1;31m
 Start test 12?[0m
 tape.jpg: ISO Media MP4 Base Media v2
